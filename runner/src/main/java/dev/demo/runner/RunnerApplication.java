@@ -2,6 +2,7 @@ package dev.demo.runner;
 
 import dev.demo.runner.run.Location;
 import dev.demo.runner.run.Run;
+import dev.demo.runner.run.RunRepository;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,10 +26,10 @@ public class RunnerApplication {
 	}
 
 	@Bean
-	CommandLineRunner runner() {
+	CommandLineRunner runner(RunRepository runRepository) {
 		return args -> {
 			Run run =  new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 5, Location.OUTDOOR);
-			log.info("Run: " + run);
+			runRepository.create(run);
 		};
 	}
 
