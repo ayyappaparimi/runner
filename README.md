@@ -1,5 +1,5 @@
-Initialy Iam creating the backend frame works for my runner project
-Web Application(REST API)
-Database 
-REST client
-Testing
+Initialy Iam creating the backend frame works for my runner project with
+Web Application(REST API) using
+Database and
+REST client. Finally 
+Testing the web application.
