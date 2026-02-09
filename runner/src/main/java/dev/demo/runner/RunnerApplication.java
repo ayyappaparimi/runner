@@ -2,6 +2,7 @@ package dev.demo.runner;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -16,6 +17,7 @@ public class RunnerApplication {
 
 	}
 
+	/*
 	@Bean
 	CommandLineRunner runner() {
 		return args -> {
@@ -23,6 +25,8 @@ public class RunnerApplication {
 			log.info("Run: " + run);
 		};
 	}
+
+	 */
 //	@Beans
 //	CommandLineRunner runner(RunRepository runRepository) {
 //		return args -> {
